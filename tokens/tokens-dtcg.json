@@ -1,0 +1,44 @@
+{
+  "$description": "Реестр продуктовых переопределений Bootstrap 5.3. Значения ожидают исходной темы.",
+  "$extensions": {
+    "com.desingsystem.inventory": {
+      "status": "blocked",
+      "format": "DTCG 2025.10",
+      "bootstrap": "5.3",
+      "figmaContext": "https://www.figma.com/design/0AZ3iKitwR3w56MMVtPWCa?node-id=0-1",
+      "productCoverage": {
+        "bootstrapOverrides": "unverified",
+        "semanticColors": "unverified",
+        "radii": "unverified",
+        "spacing": "unverified",
+        "tapTargets": "unverified",
+        "textStyles": "unverified"
+      },
+      "requiredSources": [
+        "published-product-figma-file",
+        "bootstrap-5.3-theme-or-token-export"
+      ],
+      "communityEvidence": {
+        "library": "Bootstrap 5 Design System - UI Kit (Community)",
+        "variableCollection": {
+          "name": "Color",
+          "libraryName": "Bootstrap 5 Design System - UI Kit (Community)",
+          "key": "798280494fec47198ed74d23f03ef4add3935436"
+        },
+        "variables": [
+          {
+            "name": "Theme Colors/Primary",
+            "key": "55f590ffdfb79ff05a636c6be099d9bdc9d92210",
+            "type": "COLOR"
+          },
+          {
+            "name": "Theme Colors/Secondary",
+            "key": "143db90e0b31d6eed78f1965856df4a3c5623d18",
+            "type": "COLOR"
+          }
+        ],
+        "values": "unverified"
+      }
+    }
+  }
+}
