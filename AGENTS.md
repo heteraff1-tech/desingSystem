@@ -2,7 +2,7 @@
 
 ## Порядок чтения
 
-1. Открой [index.md](index.md) и проверь статус покрытия.
+1. Открой [index.md](index.md) и выбери профиль по исходнику.
 2. Выпиши UI-задачи и выбери канонические строки из каталога [Bootstrap 5.3](catalog/bootstrap-mapping.md) или [«Здоровье»](catalog/health.md) для целевого проекта.
 3. Сверь [исключения](catalog/ignore-and-deprecated.md) и [имена токенов](tokens/summary.md).
 4. Для сборки следуй [build-from-ds](.skills/build-from-ds/SKILL.md).

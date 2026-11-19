@@ -2,23 +2,28 @@
 
 | Правило | Действие |
 | --- | --- |
-| Любой сегмент имени начинается с `.` или `_` | Исключить из публичного каталога. |
-| Сегмент `Base` или `Internal` (без учёта регистра) | Исключить весь путь и дочерние варианты. |
-| Иконки и пиктограммы | Оставить внутри компонентов как зависимость. |
-| Вариант внутри Component Set | Учитывать один раз через родительский set и его параметры. |
-| Официально помеченный legacy/deprecated или заменённый дубль | Запретить новую вставку. Записать старый ключ, замену и источник статуса. |
+| Сегмент имени начинается с `.` или `_` | Исключить из публичного каталога. |
+| Сегмент `Base` или `Internal` без учёта регистра | Исключить путь и дочерние варианты. |
+| Иконки и пиктограммы | Переиспользовать только как зависимости компонентов. |
+| Вариант в Component Set | Выбирать через параметры родительского набора. |
+| Документация, примеры, заглушки конструктора, внутренние слои `components/` | Не вставлять отдельно. Разрешены публичные комбинации из каталога. |
+| Архивный статус | Запретить новую вставку и записать замену. |
 
-## Запрещённые отдельные вставки из Community Kit
+## Исключения из исходного Bootstrap Community Kit
 
-| Имя Figma | Используй |
+| Служебная запись или дубль | Канон |
 | --- | --- |
-| `_change-value` | `input-number` |
-| `components/checkbox` | `checkbox-input` |
-| `components/accordion-item` | `accordion` |
-| `components/list-group-item` | `list-group` |
-| `components/dropdown-menu-item`, `components/dropdown-menu-item-group` | `dropdown-trigger-with-menu` |
-| `table/row-base`, `table/col-base` | `table` |
+| `comment/nested(backup)` | `comment/nested` |
+| `button-list` для группы кнопок | `button-group` |
+| `navbar/default` для шапки | `navbar/responsive` |
+| `tabs/left`, `components/tabs-top`, `components/tabs-left` для панелей | `tabs/top` |
+| `dropdown-menu`, `dropdown-trigger`, `components/dropdown-menu-item*` отдельно | `dropdown-trigger-with-menu` |
+| `_change-value`, `_input-number-base`, `_input-number-handler` | `input-number` |
+| `components/checkbox`, `components/radio`, `_switch-nob` | `checkbox-input`, `radio-group`, `switch-input` по назначению |
+| `components/accordion-item`, `components/list-group-item` | `accordion`, `list-group` |
+| `date-picker-dropdown`, `time-picker-dropdown` | `date-picker`, `time-picker` |
+| `placeholders-line` | `placeholders` |
+| `table/row-base`, `table/col-base`, `components/table-*` отдельно | Готовая таблица продукта |
+| `layout-slots/base`, `_grid_container`, `spacer` отдельно | Сетка и отступы целевого проекта |
 
-Имена продуктовых legacy-компонентов пока не подтверждены. Перед публикацией новой строки сверяй назначение с текущим сценарием, статусом публикации и существующим кодом. Номер версии в имени служит поводом для сверки.
-
-Для «Здоровья» исключай `Health/Icons/*` и самостоятельную вставку `Health/Control/Sheet pull handle`. Ручка используется внутри продуктовой панели.
+В «Здоровье» исключай `Health/Icons/*` и самостоятельную вставку `Health/Control/Sheet pull handle`. Ручка используется внутри продуктовой панели.

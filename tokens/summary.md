@@ -1,17 +1,23 @@
 # Токены и Text Styles
 
-Статус продуктовых токенов — `blocked`. Поля ниже фиксируют покрытие; значения проверяй в [DTCG](tokens-dtcg.json) после импорта подтверждённой темы.
+[Значения DTCG](tokens-dtcg.json) хранятся в `community.variables`, `community.textStyles`, `community.paintStyles` и `community.effectStyles`. Ищи точное имя Figma в метаданных. Стили с изображениями представлены ссылкой по ключу Figma.
 
-| Группа | Подтверждённые продуктовые имена |
+| Группа | Доступные имена и правила |
 | --- | --- |
-| Переопределения `--bs-*` | Нужен исходник темы Bootstrap 5.3. |
-| Семантические цвета | Нужны Variables и их CSS-имена по ролям. |
-| Радиусы | Нужна шкала с привязкой к компонентам. |
-| Отступы | Нужна продуктовая шкала и её CSS-алиасы. |
-| Тап-зоны | Нужны имена размеров интерактивных областей. |
-| Text Styles | Нужен экспорт стилей библиотеки. |
+| Семантические Variables | `Theme Colors/Primary`, `Theme Colors/Secondary` из коллекции `Color`. |
+| Семантические Paint Styles | `Theme/Primary`, `Theme/Secondary`, `Theme/Success`, `Theme/Danger`, `Theme/Warning`, `Theme/Info`, `Body Text/Body Color`. |
+| Фокус и тени | `Focus Ring/Primary`, `Focus Ring/Secondary`, `Shadows/shadow`, `Shadows/shadow-sm`, `Shadows/shadow-lg`, `Shadows/shadow-inset`. |
+| CSS-переопределения | У обеих Variables поле CSS Code Syntax пустое. Используй `--bs-*` из темы, подключённой в целевом коде. Продуктовые переопределения ждут сверки с этой темой. |
+| Радиусы, отступы, тап-зоны | Именованных Variables в этом файле нет. Для макета сохраняй размеры из выбранного варианта. Для кода бери шкалу целевого проекта. |
 
-Подключённый Bootstrap Community Kit предоставляет Variables `Theme Colors/Primary`, `Theme Colors/Secondary` и Text Styles `Body/Regular`, `Body/Bold`, `Body/Small`. Это имена активов Community Kit. Используй их в его черновом профиле. Связи с продуктовыми `--bs-*` требуют проверки по исходнику темы.
+## Text Styles Bootstrap Community Kit
+
+- `Body/Regular`, `Body/Bold`, `Body/Light`, `Body/Italic`, `Body/Underline`, `Body/Strike`, `Body/Small`, `Body/Code`, `Body/Lead`, `Body/Blockquote`
+- `Heading/H1`–`Heading/H6`, `Display/H1`–`Display/H6`
+- `Components/Badge/H1`–`Components/Badge/H6`
+- `Components/Floating labels/Input Text`, `Components/Floating labels/Label Text Focused`
+- `Components/Dropdowns/Dropdown Header`, `Components/Modal/Title`, `Components/Offcanvas/Title`
+- `Components/Progress/Label`, `Components/Toast/Header Title`, `Components/Toast/Header Time`
 
 ## Профиль «Здоровье»
 
