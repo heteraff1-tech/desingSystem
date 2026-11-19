@@ -38,6 +38,30 @@
           }
         ],
         "values": "unverified"
+      },
+      "expectedAssets": 2900,
+      "otherProfiles": {
+        "health": {
+          "collections": [
+            {
+              "name": "Health · Colors",
+              "count": 54,
+              "modes": [
+                "Light",
+                "Dark"
+              ]
+            },
+            {
+              "name": "Health · Dimensions",
+              "count": 30,
+              "modes": [
+                "Value"
+              ]
+            }
+          ],
+          "textStyleCount": 11,
+          "dtcgSnapshot": "https://github.com/heteraff1-tech/design-harness/blob/main/rules/tokens-dtcg.json"
+        }
       }
     }
   }
